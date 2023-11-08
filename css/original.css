@@ -1,0 +1,62 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Nov 8, 2023, 7:32:19 PM
+    Author     : ernes
+*/
+:root{
+    --body-color: #222;
+    --transparent-color: #aaa;       
+}
+
+label {
+    display: block;
+    text-align: center;
+}
+
+.org-title {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.org-word-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;   
+    height: 410px;
+}
+
+.org-word {
+    border: 0.5px solid;
+    border-color: black;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+}
+
+.org-letter {
+    border: 0.5px solid;
+    border-color: black;
+    flex-basis: 33.3%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--body-color);
+    transition: color 1.5s;
+}
+
+#wordInput {
+    width: 20%; 
+    margin-top: 50px; 
+    height: 75px;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}

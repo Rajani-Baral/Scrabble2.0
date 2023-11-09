@@ -75,8 +75,8 @@
                         <section id="play" class="tm-section">
                             <h2 class="tm-text-primary">Play</h2>
                             <hr class="mb-5">   
-                            <div id="playContainer" style="display: flex; flex-direction: row; width: 100%">
-                                <div id="fourLetterWords" class="org-word-container" style="width: 300px; margin-right: 156px">     
+                            <div id="playContainer" style="display: flex; flex-wrap: wrap; justify-content: space-around">
+                                <div id="fourLetterWords" class="org-word-container" style="width: 300px">     
                                     <label for="four-1" class="org-title">4 letters</label>
                                     <div id="four-1" class="org-word">
                                         <div class="org-letter" id="four-1-1">m</div>
@@ -103,7 +103,7 @@
                                         <div class="org-letter" id="four-4-4">t</div>
                                     </div>
                                 </div>
-                                <div id="fiveLetterWords" class="org-word-container" style="width: 375px; margin-right: 155px">     
+                                <div id="fiveLetterWords" class="org-word-container" style="width: 375px">     
                                     <label for="five-1" class="org-title">5 letters</label>
                                     <div id="five-1" class="org-word">
                                         <div class="org-letter" id="five-1-1">m</div>
@@ -169,18 +169,32 @@
                                         <div class="org-letter" id="six-4-6">s</div>
                                     </div>
                                 </div>
-                            </div>
-                          
                                 <input type="text" id="wordInput" placeholder=" Type here" maxlength="6"> 
+                            </div>                       
+                            
                           
                         </section>
                     </div>
-                    <!-- Gallery section -->
+                    <!-- Rules section -->
                     <div class="tm-section-wrap">
-
                         <section id="rules" class="tm-section">
                             <h2 class="tm-text-primary">Rules</h2>
-                            <hr class="mb-5">                                              
+                            <hr class="mb-5">  
+                            <div class="org-text">In "Anagrabble", your goal is to solve as many anagrams from the given letters as possible in the time limit of 90 seconds. 
+                                The longer the anagram you solve, the more points you get for it, so play with this in mind. Have fun! <br><br><br>
+                                <ul>
+                                    <li style="margin-bottom: 10px">
+                                        4-letter words give: &nbsp<span style="font-weight: bold">x points</span>
+                                    </li>
+                                    <li style="margin-bottom: 10px">
+                                        5-letter words give: &nbsp<span style="font-weight: bold">y points</span>
+                                    </li>
+                                    <li style="margin-bottom: 10px">
+                                        6-letter words give: &nbsp<span style="font-weight: bold">z points</span>
+                                    </li>
+                                </ul>
+                                
+                            </div>
                         </section>
                     </div>
                     <!-- Leaderboard section -->
@@ -241,7 +255,11 @@
                     <div class="tm-section-wrap">                  
                         <section id="feedback" class="tm-section">
                             <h2 class="tm-text-primary">Feedback</h2>
-                            <hr class="mb-5">                                           
+                            <hr class="mb-5"> 
+                            <div class="org-text">Please share any of your tips or complaints here: </div><br>
+                            <textarea id="feedbackInput" placeholder="Type here" maxlength="400"></textarea><br>
+                            <button class="btn-primary" onclick="">Submit</button>
+                            <div id="siteEnd">ANAGRABBLE™</div>
                         </section>
                     </div>                
                 </div> <!-- .tm-main -->                      

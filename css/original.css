@@ -52,11 +52,36 @@ label {
 }
 
 #wordInput {
-    width: 20%; 
-    margin-top: 50px; 
+    width: 30%; 
+    margin-top: 100px; 
     height: 75px;
-    font-size: 1.8em;
+    font-size: 2.2em;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+}
+
+#feedbackInput {
+    width: 80%; 
+    height: 150px;
+    font-size: 1.5em;
+    padding: 5px;
+    resize: none;
+}
+
+#siteEnd {
+    font-size: 2.2em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    color: #006699;
+    margin-top: 370px;
+}
+
+.org-text {
+    width: 100%;
+    text-align: left;
+    font-size: 1.5em;
+    
 }

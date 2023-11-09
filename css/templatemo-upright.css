@@ -30,7 +30,8 @@ a:hover {
 .container-fluid { margin-left: 0; }
 
 .btn-primary {
-	padding: 12px 50px;
+    margin-top: 20px;
+    padding: 10px 30px;
     border-radius: 0;
     background: #006699;
     font-size: 1.2rem;

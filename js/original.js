@@ -1,11 +1,12 @@
 let wordBox = document.getElementsByClassName("org-word");
 let startBtn = document.getElementById("startBtn");
+let timer = document.getElementById("timer");
 function startGame(){
     startBtn.classList.toggle("visible");
     wordBox.classList.toggle("visible");
-    startTimer();
+    setTimeout(setTimeDiv(), 1000); //every second run setTimeDiv()
 }
 
-function startTimer(){
-    
+function setTimeDiv(){
+    timer.innerHTML="newtext";
 }

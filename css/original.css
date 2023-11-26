@@ -105,3 +105,13 @@ label {
     margin-right: 30px;
     margin-bottom: 50px;
 }
+
+.startBtn{
+    display: flex;
+    justify-content: center;
+    visibility: visible;
+}
+
+.notStartBtn{
+    visibility: hidden;
+}

@@ -1,9 +1,14 @@
+let wordBox = document.getElementsByClassName("org-word");
+let startBtn = document.getElementById("startBtn");
+let timer = document.getElementById("timer");
+let timerStarted = false;
+let stop = true;
 
 function startGame() {
-    let wordBox = document.getElementsByClassName("org-word");
-    let startBtn = document.getElementById("startBtn");
-    setTimeDiv();
-    setTimeout(setTimeDiv(), 1000); //every second run setTimeDiv()
+    startBtn.classList.toggle("visible");
+    wordBox.classList.toggle("visible");
+    setInterval(setTimeDiv(), 1000); //every second run setTimeDiv()
+
     for (let j = 1; j < 5; j++) {
         let vards = sajauc(randomVards(4));
         for (let i = 1; i < 5; i++) {
@@ -26,8 +31,17 @@ function startGame() {
 }
 
 function setTimeDiv() {
-    let timer = document.getElementById("timer");
-    timer.innerHTML = "89s";
+    if (timerStarted) {
+        if (timeLeft == 0) {
+            stop = true;
+            return;
+        }
+        timeLeft -= 1;
+        timer.innerHTML = timeLeft + "s";
+    }else{
+        timerStarted = true;
+        let timeLeft = 90;
+    }
 }
 
 var words4 = ["code", "name", "cage", "dead", "fire", "iron", "deck", "beam", "frog", "jury"];
